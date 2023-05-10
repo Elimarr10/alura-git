@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 
-<h1>PROGRAMA JUEGO DE ADIVINACION </h1>
+<h1>PROGRAMA JUEGO DE ADIVINACION con numeros hasta el 15</h1>
 
 <script>
 
@@ -15,8 +15,8 @@
         saltarLinea();
     }
 
-    var numeroPensado = Math.round(Math.random()*100);
-    var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-100"));
+    var numeroPensado = Math.round(Math.random()*15);
+    var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-15"));
 
     if(numeroPensado == numeroLanzado){
         imprimir("usted acertó");
@@ -29,5 +29,6 @@
             imprimir("usted erró, el número pensado era mayor que tu número");
         }
     }
+    alert("gracias por participar");
 
 </script>
